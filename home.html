@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Scorecard</title>
+    <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    
+    <div id="head">
+        <h1 id="title">Scoreboard</h1>
+    </div>
+
+    <div id="main">
+        <div id="left-main">
+            <h2 class="main-head">home</h2>
+            <h1 id="score-left">0</h1>
+            <button id="one-left" onclick="plusoneleft()">+1</button>
+            <button id="two-left" onclick="plustwoleft()">+2</button>
+            <button id="three-left" onclick="plusthreeleft()"> +3</button>
+
+        </div>
+        <div id="right-main">
+            <h2 class="main-head">away</h2>
+            <h1 id="score-right">0</h1>
+            <button id="one-right" onclick="plusoneright()">+1</button>
+            <button id="two-right" onclick="plustworight()">+2</button>
+            <button id="three-right" onclick="plusthreeright()">+3</button>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
