@@ -3,6 +3,7 @@
     src: url('fonts/CursedTimerULiL.woff')format('woff');
     src: url('fonts/CursedTimerULiL.woff2')format('woff2');
 }
+
 @font-face {
     font-family: 'ozone';
     src: url('fonts/Ozone.woff')format('woff');
@@ -13,10 +14,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:black ;
-    overflow: hidden;
+    background-color: black;
+    /* overflow: hidden; */
 
-} 
+}
+
+body {
+    overflow-x: hidden;
+    /* border: 3px dotted #ccc; */
+}
 
 #head {
     text-align: center;
@@ -27,18 +33,27 @@
 }
 
 #main {
-    /* height: 100vh;
-    height: 100dvh; */
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+    /* height: 100vh; */
+    /* height: 40dvh; */
+    /* width: 100vw; */
+    /* display: flex; */
+    /* justify-content: center; */
     color: whitesmoke;
-    /* margin: 50px; */
+    margin: 0px 30px;
+    border-left: 3px dotted #ccc;
+    border-top: 3px dotted #ccc;
+    border-right: 3px dotted #ccc;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .main-head {
     font-family: ozone;
-    font-size: 50px;
+    font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
     padding: 40px 0px;
@@ -47,7 +62,7 @@
 
 #left-main {
     padding: 0px 200px;
-    border-right: 4px dotted #ffffff;
+    border-right: 3px dotted #ccc;
 }
 
 #score-left {
@@ -58,13 +73,14 @@
     text-align: center;
     color: rgb(0, 199, 0);
 }
+
 #score-right {
     font-family: ozone;
     font-size: 8rem;
     /* padding: 30px 0px; */
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    color:rgb(0, 199, 0);
+    color: rgb(0, 199, 0);
 }
 
 #right-main {
@@ -72,12 +88,260 @@
 }
 
 button {
-    margin: 15px;
-    padding: 10px;
+    /* display: inline-block; */
+    /* display: block; */
+    padding: 10px 20px;
+    margin: 20px auto;
     font-family: 'Cursed Timer ULiL';
     color: red;
     background-color: transparent;
     border-color: #ffffff;
     cursor: pointer;
 
+}
+#btn {
+    /* width: 40vw; */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* text-align: center; */
+    padding: 10px 20px;
+    margin: 10px auto;
+
+}
+
+#line {
+    margin: 0px 30px;
+    border: none;
+    border-top: 3px dotted #ccc;
+}
+
+#second-container {
+    /* height: 40dvh; */
+    /* padding: 70px; */
+    /* width: 100vw; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    color: whitesmoke;
+    margin: 0px 30px;
+    border-left: 3px dotted #ccc;
+    border-bottom: 3px dotted #ccc;
+    border-right: 3px dotted #ccc;
+}
+
+.home-foul {
+    padding: 0px 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.away-foul {
+    padding: 0px 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.foul-head {
+    font-family: ozone;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#ttl-foul-home {
+    font-family: ozone;
+    font-size: 6rem;
+    padding: 20px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    /* text-align: center; */
+    color: rgb(0, 199, 0);
+}
+
+#ttl-foul-away {
+    font-family: ozone;
+    font-size: 6rem;
+    padding: 20px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    /* text-align: center; */
+    color: rgb(0, 199, 0);
+}
+
+#lastcontainer {
+    /* height: 40dvh; */
+    /* padding: 70px; */
+    /* width: 100vw; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    margin: 0px 30px;
+    border-left: 3px dotted #ccc;
+    border-bottom: 3px dotted #ccc;
+    border-right: 3px dotted #ccc;
+}
+
+.home-tm {
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.away-tm {
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tm-head {
+    font-family: ozone;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#timeouts-home {
+    font-family: ozone;
+    font-size: 6rem;
+    padding: 20px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    /* text-align: center; */
+    color: rgb(0, 199, 0);
+}
+
+#timeouts-away {
+    font-family: ozone;
+    font-size: 6rem;
+    padding: 20px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    /* text-align: center; */
+    color: rgb(0, 199, 0);
+}
+
+#reset-btn {
+    display: block;
+    padding: 10px 40px;
+    margin: 20px auto;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+}
+
+/* position: absolute; */
+/* margin: 40px 900px; */
+
+@media (max-width:1390px) {
+
+    #main,
+    #second-container,
+    #lastcontainer {
+        flex-wrap: wrap;
+    
+    }
+
+    #head {
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    #left-main,
+    #right-main {
+        /* width: 40%; */
+        margin: 0 50px;
+        border-right: none;
+    }
+
+    .home-foul,
+    .away-foul,
+    .home-tm,
+    .away-tm {
+        width: 40%;
+        padding: 0 20px;
+    }
+
+    #score-left,
+    #score-right {
+        font-size: 5rem;
+    }
+
+    #ttl-foul-home,
+    #ttl-foul-away,
+    #timeouts-home,
+    #timeouts-away {
+        font-size: 4rem;
+    }
+    
+
+}
+
+@media (max-width: 1020px) {
+    #head {
+        font-size: small
+    }
+
+    #left-main {
+        border-right: none;
+    }
+
+    #main,
+    #second-container,
+    #lastcontainer {
+        
+        display: flex;
+
+    }
+
+    .main-head, .foul-head, .tm-head {
+        font-size: 1rem;
+    }
+
+    #left-main,
+    #right-main,
+    .home-foul,
+    .away-foul,
+    .home-tm,
+    .away-tm {
+        /* width: 100%; */
+        padding: 0 10px;
+        margin: 0px;
+    }
+
+    #score-left,
+    #score-right {
+        font-size: 2rem;
+        padding: 10px 20px;
+        /* width: 50%; */
+        margin: 0px auto;
+    }
+
+    #ttl-foul-home,
+    #ttl-foul-away,
+    #timeouts-home,
+    #timeouts-away {
+        font-size: 2rem;
+    }
+
+    button, #btn {
+        
+        /* display: block; */
+        /* display: block; */
+        padding: 4px 10px;
+        margin-top: 10px auto;
+    }
 }

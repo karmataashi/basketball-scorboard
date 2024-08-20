@@ -12,27 +12,62 @@
     <div id="head">
         <h1 id="title">Scoreboard</h1>
     </div>
-
+<!-- main functionality of the page starts -->
     <div id="main">
         <div id="left-main">
             <h2 class="main-head">home</h2>
             <h1 id="score-left">0</h1>
-            <button id="one-left" onclick="plusoneleft()">+1</button>
-            <button id="two-left" onclick="plustwoleft()">+2</button>
-            <button id="three-left" onclick="plusthreeleft()"> +3</button>
+            <button id="btn" onclick="plusoneleft()">+1</button>
+            <button id="btn" onclick="plustwoleft()">+2</button>
+            <button id="btn" onclick="plusthreeleft()"> +3</button>
 
         </div>
         <div id="right-main">
             <h2 class="main-head">away</h2>
             <h1 id="score-right">0</h1>
-            <button id="one-right" onclick="plusoneright()">+1</button>
-            <button id="two-right" onclick="plustworight()">+2</button>
-            <button id="three-right" onclick="plusthreeright()">+3</button>
+            <button id="btn" onclick="plusoneright()">+1</button>
+            <button id="btn" onclick="plustworight()">+2</button>
+            <button id="btn" onclick="plusthreeright()">+3</button>
 
+        </div>
+    </div>
+    <hr id="line">
+<!-- fouls section  -->
+    <div id="second-container">
+
+        <div class="home-foul">
+            <h2 class="foul-head">Foul</h2>
+            <h1 id="ttl-foul-home">0</h1>
+            <button onclick="foulhome()">+1</button>
+
+        </div>
+        <div class="away-foul">
+            <h2 class="foul-head">Foul</h2>
+            <h1 id="ttl-foul-away">0</h1>
+            <button onclick="foulaway()">+1</button>
         </div>
 
     </div>
+
+    <div id="lastcontainer">
+        <div class="home-tm">
+            <h2 class="tm-head">Remaining Timeout</h2>
+            <h1 id="timeouts-home">3</h1>
+            <button onclick="timeouthome()">-1</button>
+
+        </div>
+        <div class="away-tm">
+            <h2 class="tm-head">Remaining Timeout</h2>
+            <h1 id="timeouts-away">3</h1>
+            <button onclick="timeoutaway()">-1</button>
+        </div>
+
+    </div>
+    <button id="reset-btn" onclick="reset()">reset</button>
+
+
     <script src="app.js"></script>
+
 </body>
 
 </html>
